@@ -1,1 +1,1 @@
-# python
+# this repository is where i test my python programming knowledge
