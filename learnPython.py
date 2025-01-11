@@ -48,7 +48,7 @@ B: 80-89
 C: 70-79
 D: 60-69
 F: Below 60
-    """ 
+    
 try:
     # Input score
     score = float(input("Enter the score (0-100): "))
@@ -71,4 +71,12 @@ try:
     print(f"The grade is: {grade}")
 except ValueError:
     print("Invalid input. Please enter a numeric value.")
+    Write a program to:
 
+Print numbers from 1 to 10 using a for loop.
+Print the square of each number.
+""" 
+# Loop through numbers from 1 to 10
+for num in range(1, 11):
+    # Print the number and its square
+    print(f"Number: {num}, Square: {num**2}")
