@@ -75,8 +75,35 @@ except ValueError:
 
 Print numbers from 1 to 10 using a for loop.
 Print the square of each number.
-""" 
 # Loop through numbers from 1 to 10
 for num in range(1, 11):
     # Print the number and its square
     print(f"Number: {num}, Square: {num**2}")
+
+    #########################################
+    Write a program that:
+
+Asks the user to guess a secret number (e.g., 7).
+Keeps asking until the user guesses correctly.
+Prints a congratulatory message when guessed correctly.
+    """
+    # Secret number to guess
+secret_number = 7
+
+# Outer loop for guessing attempts
+while True:
+    # Inner loop for user input and checking
+    guess = input("Guess the secret number (between 1 and 10): ")
+    
+    # Check if the input is a valid number
+    if guess.isdigit():
+        guess = int(guess)
+        
+        # Check if the guess is correct
+        if guess == secret_number:
+            print("Congratulations! You've guessed the secret number!")
+            break  # Exit the loop
+        else:
+            print("Try again!")
+    else:
+        print("Please enter a valid number.")
